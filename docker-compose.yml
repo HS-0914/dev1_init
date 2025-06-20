@@ -4,7 +4,7 @@ services:
     container_name: mysql-container
     restart: always
     ports:
-      - "1557:1557"
+      - "1557:3306"
     environment:
       MYSQL_ROOT_PASSWORD: tpuNjOhPrYM5
     volumes:
@@ -15,7 +15,7 @@ services:
     container_name: redis-server
     restart: always
     ports:
-      - "1379:1379"
+      - "1379:6379"
     command: >
       redis-server
       --bind 0.0.0.0
